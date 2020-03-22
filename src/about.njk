@@ -7,3 +7,7 @@ layout: base.njk
   <h1>About a page for you</h1>
   <p>All about the static code generation</p>
 </div>
+
+{% for item in news %}
+    <a href="/{{item.country}}/">{{item.country}}</a>
+{% endfor %}
