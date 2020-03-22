@@ -2,12 +2,27 @@
 title: A page for you
 layout: base.njk
 ---
-  
+
 <div class="container">
   <h1>This is a page for you</h1>
   <div class="vibe">You are great!</div>
   <div class="love">
     ❤️
   </div>
+  <ul>
+    {% for article in news.articles %}
+      <li>
+        <h2>
+          <a href="{{article.url}}">{{ article.title }}</a>
+        </h2>
+      </li>
+      <span>{{article.source.name}} -- <time>{{article.publishedAt}}</time>
+      </span>
+    {% endfor %}
+  </ul>
+  <footer>
+    <p>Powered by <a href="https://newsapi.org" target="_blank" rel="noopener noreferrer">newsapi.org</a>
+    </p>
+  </footer>
 </div>
 <script src="js/vibe.js"></script>
