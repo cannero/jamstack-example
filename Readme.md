@@ -5,4 +5,4 @@
 [project on github, see also fcc-x...](https://github.com/philhawksworth/fcc-6-client-side-api)
 
 - app hosting is done on netlify.com
-- newsapi.org used for API
+- newsapi.org and openweathermap.org used for API
